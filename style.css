@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.sub {
+    display: flex;
+    gap: 4.5rem;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+.item2 {
+    color: #000;
+}
+
+.main-container {
+    background-color: #fff;
+    width: 90%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 40px 20px; 
+    border-radius: 10px;
+}
+
+.search-box {
+    position: relative;
+   
+}
+
+.search-box input {
+    padding: 1rem;
+    width: 90%; 
+    font-size: 2rem;
+    border-radius: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: rgba(208, 206, 206, 0.752);
+    border: none;
+}
+
+.search-box button {
+    position: relative;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    right:60px;
+}
+
+.result h3 {
+    font-size: 2em; 
+    color: #1f194c;
+}
+
+.result.word {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 1.5em; 
+}
+
+.result.details {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 10px 0 20px 0;
+    font-size: 1.5em;
+}
+
+.details {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.word {
+    width: 100%; 
+    max-width: 100%; 
+    margin-top: 1em;
+    font-size: 2.5em; 
+}
+
+.word-meaning {
+    color: #000;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Media queries  */
+@media screen and (min-width: 600px) {
+    .main-container {
+        width: 70%; /* for large screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container {
+        width: 60%; /*  even larger screens */
+    }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    .search-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; 
+    }
+
+}
